@@ -15,3 +15,16 @@ Gemini Pro对话插件
 申请Key的过程请参考我的博客的一部分：
 [https://blog.vince-g.xyz/#/posts/deploy-gemini-pro](https://blog.vince-g.xyz/#/posts/deploy-gemini-pro)
 
+## 使用方法
+在Koishi插件市场安装gemini-pro插件
+
+配置后端的url, 然后打开你的魔法，在后端将代理端口改为你魔法的端口
+
+启用插件，通过命令调用
+```shell
+# 和ai对话，会累计上下文
+ai 你的内容
+
+# 清空上下文
+清空上下文
+```
