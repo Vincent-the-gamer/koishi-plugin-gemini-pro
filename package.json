@@ -1,0 +1,39 @@
+{
+  "name": "koishi-plugin-gemini-pro",
+  "description": "和Google的Gemini Pro对话",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "publish": "pnpm publish --registry https://registry.npmjs.org"
+  },
+  "author": "Vincent-the-gamer <erxianqiaottjt@163.com>",
+  "license": "MIT",
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "gemini pro"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vincent-the-gamer/koishi-plugin-gemini-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vincent-the-gamer/koishi-plugin-gemini-pro/issues"
+  },
+  "homepage": "https://github.com/Vincent-the-gamer/koishi-plugin-gemini-pro",
+  "koishi": {
+    "description": {
+      "en": "Chat with Google Gemini Pro",
+      "zh": "和Google的Gemini Pro对话"
+    }
+  },
+  "peerDependencies": {
+    "koishi": "^4.17.3"
+  }
+}
