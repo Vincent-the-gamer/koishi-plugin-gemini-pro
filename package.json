@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "publish": "pnpm publish --registry https://registry.npmjs.org"
+    "pub": "pnpm publish --registry https://registry.npmjs.org"
   },
   "author": "Vincent-the-gamer <erxianqiaottjt@163.com>",
   "license": "MIT",
