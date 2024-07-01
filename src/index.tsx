@@ -14,18 +14,19 @@ export function apply(ctx: Context) {
   ctx.command("gemini <message:text>")
      .alias("ai")
      .action(async ({ session }, message) => {
-        const messageId = session.messageId
-        const response: Record<string, any>  = await ctx.http.post(ctx.config.url + "/chat", { message })
-
-        // 回复消息
-        const result = `${<quote id={messageId}/>} ${response.result}`
-        session.send(result)
-     })
-
-  ctx.command("qingkong")
-     .alias("清空上下文")
-     .action(async ({ session }) => {
-        const response: Record<string, any> = await ctx.http.get(ctx.config.url + "/clear")
-        session.send(response.msg)
+         const messageId = session.messageId
+         let response: Record<string, any> = {}
+         let result: string = ""
+        // 清空上下文
+        if(message === "清空上下文") {
+            response = await ctx.http.get(ctx.config.url + "/clear")
+            result = `${<quote id={messageId}/>} ${response.msg}`
+            session.send(result)
+        } else {
+            response = await ctx.http.post(ctx.config.url + "/chat", { message })
+            // 回复消息
+            result = `${<quote id={messageId}/>} ${response.result}`
+            session.send(result)
+        }
      })
 }
