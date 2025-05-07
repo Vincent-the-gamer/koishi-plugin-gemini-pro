@@ -13,7 +13,7 @@ Gemini Pro对话插件
 申请Gemini Pro API Key: https://makersuite.google.com/app/apikey
 
 申请Key的过程请参考我的博客的一部分：
-[https://blog.vince-g.xyz/#/posts/deploy-gemini-pro](https://blog.vince-g.xyz/#/posts/deploy-gemini-pro)
+[https://blog.vince-g.xyz/#/posts/deploy-gemini-pro](https://blog.vince-g.xyz/posts/deploy-gemini-pro)
 
 ## 使用方法
 在Koishi插件市场安装gemini-pro插件
